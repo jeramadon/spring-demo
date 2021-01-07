@@ -10,13 +10,11 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class ProjectServiceImpl implements IProjectService {
+public class ProjectServiceImplField implements IProjectService {
 
+    @Autowired
+    @Qualifier("projectRepositoryImpl2")
     private IProjectRepository projectRepository;
-
-    public ProjectServiceImpl(@Qualifier("projectRepositoryImpl2") IProjectRepository projectRepository) {
-        this.projectRepository = projectRepository;
-    }
 
     @Override
     public Optional<Project> findById(Long id) {

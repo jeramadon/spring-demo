@@ -7,6 +7,7 @@ public class Project {
     private long id;
     private String name;
     private LocalDate dateCreated;
+    private String internalId;
 
     public Project(long id, String name, LocalDate dateCreated) {
         super();
@@ -41,6 +42,14 @@ public class Project {
 
     public void setDateCreated(LocalDate dateCreated) {
         this.dateCreated = dateCreated;
+    }
+
+    public String getInternalId() {
+        return internalId;
+    }
+
+    public void setInternalId(String internalId) {
+        this.internalId = internalId;
     }
 
     @Override

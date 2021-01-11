@@ -1,6 +1,6 @@
 package com.ebf.springdemo.spring;
 
-import com.ebf.springdemo.persistence.repository.impl.ProjectRepositoryImplDev;
+import com.ebf.springdemo.persistence.repository.impl.ProjectRepositoryImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class PersistenceConfig {
 
     @Bean
-    public ProjectRepositoryImplDev projectRepository() {
-        return new ProjectRepositoryImplDev();
+    public ProjectRepositoryImpl projectRepository() {
+        return new ProjectRepositoryImpl();
     }
 }

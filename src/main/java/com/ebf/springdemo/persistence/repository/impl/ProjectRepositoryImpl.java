@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class ProjectRepositoryImplProd implements IProjectRepository {
+public class ProjectRepositoryImpl implements IProjectRepository {
 
     @Value("${project.prefix}")
     private String prefix;
@@ -20,7 +20,7 @@ public class ProjectRepositoryImplProd implements IProjectRepository {
 
     List<Project> projectList = new ArrayList<>();
 
-    public ProjectRepositoryImplProd() {
+    public ProjectRepositoryImpl() {
         super();
     }
 

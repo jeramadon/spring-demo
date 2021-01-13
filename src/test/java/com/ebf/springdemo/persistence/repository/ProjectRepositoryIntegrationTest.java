@@ -1,0 +1,59 @@
+package com.ebf.springdemo.persistence.repository;
+
+import com.ebf.springdemo.persistence.model.Project;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
+
+import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasItems;
+import static org.hamcrest.core.Is.is;
+
+@SpringBootTest
+public class ProjectRepositoryIntegrationTest {
+
+    @Autowired
+    IProjectRepository projectRepository;
+
+    @Test
+    public void onSaveProject_Success() {
+        Project project = new Project(UUID.randomUUID().toString(), LocalDate.now());
+        assertThat(projectRepository.save(project), is(notNullValue()));
+    }
+
+    @Test
+    public void onFindProjectById_Success() {
+        Project project = new Project(UUID.randomUUID().toString(), LocalDate.now());
+        projectRepository.save(project);
+        Optional<Project> findProject = projectRepository.findById(project.getId());
+        assertThat(findProject.get(), is(equalTo(project)));
+    }
+
+    @Test
+    public void onFindProjectByName_Success() {
+        Project project = new Project(UUID.randomUUID().toString(), LocalDate.now());
+        projectRepository.save(project);
+        Optional<Project> findProject = projectRepository.findByName(project.getName());
+        assertThat(findProject.get(), is(equalTo(project)));
+    }
+
+    @Test
+    public void onFindProjectsByDateRange_Success() {
+        Project oldProject = new Project(UUID.randomUUID().toString(), LocalDate.now().minusDays(7));
+        projectRepository.save(oldProject);
+        Project newProject = new Project(UUID.randomUUID().toString(), LocalDate.now());
+        projectRepository.save(newProject);
+        Project newProject2 = new Project(UUID.randomUUID().toString(), LocalDate.now());
+        projectRepository.save(newProject2);
+
+        List<Project> projectList = projectRepository.findByDateCreatedBetween(LocalDate.now().minusDays(1), LocalDate.now().plusDays(1));
+        assertThat(projectList, hasItems(newProject, newProject2));
+    }
+}

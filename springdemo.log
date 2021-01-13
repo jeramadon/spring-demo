@@ -1,84 +1,56 @@
-2021-01-12 11:52:43.102  INFO 3450 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 3450 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
-2021-01-12 11:52:43.103 DEBUG 3450 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-12 11:52:43.103  INFO 3450 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
-2021-01-12 11:52:43.685  INFO 3450 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-12 11:52:43.717  INFO 3450 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 592 ms
-2021-01-12 11:52:43.798 DEBUG 3450 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=1, name='New', dateCreated=2021-01-12}
-2021-01-12 11:52:43.802 DEBUG 3450 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
-2021-01-12 11:52:43.851  INFO 3450 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-12 11:52:44.009  INFO 3450 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/health'
-2021-01-12 11:52:44.041  INFO 3450 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-01-12 11:52:44.052  INFO 3450 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 1.171 seconds (JVM running for 1.585)
-2021-01-12 11:52:44.576  INFO 3450 --- [RMI TCP Connection(3)-192.168.86.178] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-12 11:52:44.577  INFO 3450 --- [RMI TCP Connection(3)-192.168.86.178] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-12 11:56:04.593  INFO 3450 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-01-12 11:56:06.445  INFO 3524 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 3524 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
-2021-01-12 11:56:06.446 DEBUG 3524 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-12 11:56:06.446  INFO 3524 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
-2021-01-12 11:56:07.020  INFO 3524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-12 11:56:07.058  INFO 3524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 587 ms
-2021-01-12 11:56:07.143 DEBUG 3524 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=1, name='New', dateCreated=2021-01-12}
-2021-01-12 11:56:07.147 DEBUG 3524 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
-2021-01-12 11:56:07.198  INFO 3524 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-12 11:56:07.363  INFO 3524 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/health'
-2021-01-12 11:56:07.393  INFO 3524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-01-12 11:56:07.403  INFO 3524 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 1.148 seconds (JVM running for 1.565)
-2021-01-12 11:56:07.567  INFO 3524 --- [RMI TCP Connection(1)-192.168.86.178] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-12 11:56:07.568  INFO 3524 --- [RMI TCP Connection(1)-192.168.86.178] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-01-12 11:56:49.070  INFO 3524 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-01-12 11:56:50.902  INFO 3537 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 3537 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
-2021-01-12 11:56:50.904 DEBUG 3537 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-12 11:56:50.904  INFO 3537 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
-2021-01-12 11:56:51.455  INFO 3537 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-12 11:56:51.495  INFO 3537 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 565 ms
-2021-01-12 11:56:51.578 DEBUG 3537 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=1, name='New', dateCreated=2021-01-12}
-2021-01-12 11:56:51.581 DEBUG 3537 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
-2021-01-12 11:56:51.629  INFO 3537 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-12 11:56:51.792  INFO 3537 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/status'
-2021-01-12 11:56:51.823  INFO 3537 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-01-12 11:56:51.834  INFO 3537 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 1.124 seconds (JVM running for 1.548)
-2021-01-12 11:56:52.032  INFO 3537 --- [RMI TCP Connection(2)-192.168.86.178] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-12 11:56:52.033  INFO 3537 --- [RMI TCP Connection(2)-192.168.86.178] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-01-12 12:02:21.549  INFO 3537 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-01-12 12:02:23.980  INFO 3589 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 3589 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
-2021-01-12 12:02:23.981 DEBUG 3589 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-12 12:02:23.981  INFO 3589 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
-2021-01-12 12:02:24.541  INFO 3589 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-12 12:02:24.575  INFO 3589 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 572 ms
-2021-01-12 12:02:24.658 DEBUG 3589 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=1, name='New', dateCreated=2021-01-12}
-2021-01-12 12:02:24.662 DEBUG 3589 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
-2021-01-12 12:02:24.711  INFO 3589 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-12 12:02:24.869  INFO 3589 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/status'
-2021-01-12 12:02:24.901  INFO 3589 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-01-12 12:02:24.913  INFO 3589 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 1.119 seconds (JVM running for 1.529)
-2021-01-12 12:02:25.138  INFO 3589 --- [RMI TCP Connection(1)-192.168.86.178] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-12 12:02:25.139  INFO 3589 --- [RMI TCP Connection(1)-192.168.86.178] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-01-12 12:03:57.641  INFO 3589 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-01-12 12:04:00.079  INFO 3619 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 3619 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
-2021-01-12 12:04:00.080 DEBUG 3619 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-12 12:04:00.081  INFO 3619 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
-2021-01-12 12:04:00.646  INFO 3619 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-12 12:04:00.683  INFO 3619 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 580 ms
-2021-01-12 12:04:00.776 DEBUG 3619 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=1, name='New', dateCreated=2021-01-12}
-2021-01-12 12:04:00.779 DEBUG 3619 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
-2021-01-12 12:04:00.841  INFO 3619 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-12 12:04:01.010  INFO 3619 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/status'
-2021-01-12 12:04:01.039  INFO 3619 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-01-12 12:04:01.049  INFO 3619 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 1.161 seconds (JVM running for 1.56)
-2021-01-12 12:04:01.168  INFO 3619 --- [RMI TCP Connection(2)-192.168.86.178] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-12 12:04:01.169  INFO 3619 --- [RMI TCP Connection(2)-192.168.86.178] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-01-12 12:05:01.675  INFO 3619 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-01-12 12:05:21.620  INFO 3633 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 3633 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
-2021-01-12 12:05:21.621 DEBUG 3633 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-12 12:05:21.621  INFO 3633 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
-2021-01-12 12:05:22.196  INFO 3633 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-01-12 12:05:22.227  INFO 3633 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 585 ms
-2021-01-12 12:05:22.313 DEBUG 3633 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=1, name='New', dateCreated=2021-01-12}
-2021-01-12 12:05:22.317 DEBUG 3633 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
-2021-01-12 12:05:22.367  INFO 3633 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-12 12:05:22.528  INFO 3633 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/status'
-2021-01-12 12:05:22.560  INFO 3633 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-01-12 12:05:22.571  INFO 3633 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 1.139 seconds (JVM running for 1.542)
-2021-01-12 12:05:22.618  INFO 3633 --- [RMI TCP Connection(3)-192.168.86.178] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-01-12 12:05:22.619  INFO 3633 --- [RMI TCP Connection(3)-192.168.86.178] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-01-12 12:11:05.644  INFO 3633 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-13 09:58:57.897  INFO 2380 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest using Java 15 on jerrys-mbp.lan with PID 2380 (started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-13 09:58:57.905 DEBUG 2380 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-13 09:58:57.905  INFO 2380 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : The following profiles are active: default
+2021-01-13 09:58:58.731  INFO 2380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-13 09:58:58.745  INFO 2380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2021-01-13 09:59:00.001  INFO 2380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-13 09:59:00.058 DEBUG 2380 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=1, name='New', dateCreated=2021-01-13}
+2021-01-13 09:59:00.081 DEBUG 2380 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-13 09:59:00.301  WARN 2380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-13 09:59:00.649  INFO 2380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-13 09:59:01.186  INFO 2380 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-13 09:59:01.253  INFO 2380 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 3.745 seconds (JVM running for 4.689)
+2021-01-13 09:59:01.637  INFO 2380 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-13 09:59:01.639  INFO 2380 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-13 10:09:25.342  INFO 2505 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest using Java 15 on jerrys-mbp.lan with PID 2505 (started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-13 10:09:25.344 DEBUG 2505 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-13 10:09:25.344  INFO 2505 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : The following profiles are active: default
+2021-01-13 10:09:26.084  INFO 2505 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-13 10:09:26.130  INFO 2505 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2021-01-13 10:09:27.371  INFO 2505 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-13 10:09:27.608 DEBUG 2505 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-1527398348568054403, name='New', dateCreated=2021-01-13}
+2021-01-13 10:09:27.701 DEBUG 2505 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-13 10:09:27.922  WARN 2505 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-13 10:09:28.213  INFO 2505 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-13 10:09:28.656  INFO 2505 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-13 10:09:28.711  INFO 2505 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 3.746 seconds (JVM running for 4.505)
+2021-01-13 10:09:28.976  INFO 2505 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-13 10:09:28.979  INFO 2505 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-13 16:21:09.975  INFO 5804 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest using Java 15 on jerrys-mbp.lan with PID 5804 (started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-13 16:21:09.976 DEBUG 5804 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-13 16:21:09.977  INFO 5804 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : The following profiles are active: default
+2021-01-13 16:21:10.707  INFO 5804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-13 16:21:10.756  INFO 5804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2021-01-13 16:21:11.980  INFO 5804 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-13 16:21:12.292 DEBUG 5804 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-8912316159776728478, name='New', dateCreated=2021-01-13}
+2021-01-13 16:21:12.387 DEBUG 5804 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-13 16:21:12.621  WARN 5804 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-13 16:21:12.959  INFO 5804 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-13 16:21:13.471  INFO 5804 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-13 16:21:13.521  INFO 5804 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 3.89 seconds (JVM running for 4.63)
+2021-01-13 16:21:13.900  INFO 5804 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-13 16:21:13.904  INFO 5804 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-13 16:36:16.167  INFO 5979 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest using Java 15 on jerrys-mbp.lan with PID 5979 (started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-13 16:36:16.168 DEBUG 5979 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-13 16:36:16.168  INFO 5979 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : The following profiles are active: default
+2021-01-13 16:36:16.797  INFO 5979 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-13 16:36:16.856  INFO 5979 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2021-01-13 16:36:18.275  INFO 5979 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-13 16:36:18.603 DEBUG 5979 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=5371614491752507417, name='New', dateCreated=2021-01-13}
+2021-01-13 16:36:18.697 DEBUG 5979 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-13 16:36:18.912  WARN 5979 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-13 16:36:19.236  INFO 5979 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-13 16:36:19.759  INFO 5979 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-13 16:36:19.828  INFO 5979 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 3.873 seconds (JVM running for 4.575)
+2021-01-13 16:36:20.204  INFO 5979 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-13 16:36:20.208  INFO 5979 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

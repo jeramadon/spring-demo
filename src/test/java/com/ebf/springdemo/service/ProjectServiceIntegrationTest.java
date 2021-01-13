@@ -22,7 +22,7 @@ public class ProjectServiceIntegrationTest {
 
     @Test
     public void whenSavingProject_OK() {
-        Project project = projectService.save(new Project(1L, "Project Name", LocalDate.now()));
+        Project project = projectService.save(new Project("Project Name", LocalDate.now()));
         assertThat(project, is(notNullValue()));
     }
 }

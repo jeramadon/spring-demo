@@ -1,12 +1,14 @@
 package com.ebf.springdemo.persistence.repository;
 
 import com.ebf.springdemo.persistence.model.Project;
+import org.springframework.data.repository.CrudRepository;
 
+import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 
-public interface IProjectRepository {
+public interface IProjectRepository extends CrudRepository<Project, Long> {
 
-    Optional<Project> findById(Long id);
-
-    Project save(Project project);
+    Optional<Project> findByName(String name);
+    List<Project> findByDateCreatedBetween(LocalDate start, LocalDate end);
 }

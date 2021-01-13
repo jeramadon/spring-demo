@@ -1,23 +1,36 @@
 package com.ebf.springdemo.persistence.model;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Objects;
+import java.util.Random;
+import java.util.Set;
+import java.util.stream.Collectors;
 
+@Entity
 public class Project {
+    @Id
     private long id;
     private String name;
     private LocalDate dateCreated;
     private String internalId;
 
-    public Project(long id, String name, LocalDate dateCreated) {
-        super();
-        this.id = id;
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "project_id")
+    private Set<Task> tasks;
+
+    public Project() {
+    }
+
+    public Project(String name, LocalDate dateCreated) {
+        this.id = new Random().nextLong();
         this.name = name;
         this.dateCreated = dateCreated;
     }
 
     public Project(Project project) {
-        this(project.getId(), project.getName(), project.getDateCreated());
+        this(project.getName(), project.getDateCreated());
+        this.tasks = project.getTasks().stream().collect(Collectors.toSet());
     }
 
     public long getId() {
@@ -50,6 +63,14 @@ public class Project {
 
     public void setInternalId(String internalId) {
         this.internalId = internalId;
+    }
+
+    public Set<Task> getTasks() {
+        return tasks;
+    }
+
+    public void setTasks(Set<Task> tasks) {
+        this.tasks = tasks;
     }
 
     @Override

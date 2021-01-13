@@ -28,7 +28,7 @@ public class SpringDemoApplication {
 
 	@PostConstruct
 	public void postConstruct() {
-		projectService.save(new Project(1L, "New", LocalDate.now()));
+		projectService.save(new Project("New", LocalDate.now()));
 		Optional<Project> optionalProject = projectService.findById(1L);
 		optionalProject.ifPresent(System.out::println);
 	}

@@ -1,56 +1,289 @@
-2021-01-13 09:58:57.897  INFO 2380 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest using Java 15 on jerrys-mbp.lan with PID 2380 (started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
-2021-01-13 09:58:57.905 DEBUG 2380 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-13 09:58:57.905  INFO 2380 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : The following profiles are active: default
-2021-01-13 09:58:58.731  INFO 2380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-01-13 09:58:58.745  INFO 2380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
-2021-01-13 09:59:00.001  INFO 2380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-01-13 09:59:00.058 DEBUG 2380 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=1, name='New', dateCreated=2021-01-13}
-2021-01-13 09:59:00.081 DEBUG 2380 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
-2021-01-13 09:59:00.301  WARN 2380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-01-13 09:59:00.649  INFO 2380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-13 09:59:01.186  INFO 2380 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2021-01-13 09:59:01.253  INFO 2380 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 3.745 seconds (JVM running for 4.689)
-2021-01-13 09:59:01.637  INFO 2380 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-01-13 09:59:01.639  INFO 2380 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-01-13 10:09:25.342  INFO 2505 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest using Java 15 on jerrys-mbp.lan with PID 2505 (started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
-2021-01-13 10:09:25.344 DEBUG 2505 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-13 10:09:25.344  INFO 2505 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : The following profiles are active: default
-2021-01-13 10:09:26.084  INFO 2505 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-01-13 10:09:26.130  INFO 2505 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
-2021-01-13 10:09:27.371  INFO 2505 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-01-13 10:09:27.608 DEBUG 2505 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-1527398348568054403, name='New', dateCreated=2021-01-13}
-2021-01-13 10:09:27.701 DEBUG 2505 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
-2021-01-13 10:09:27.922  WARN 2505 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-01-13 10:09:28.213  INFO 2505 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-13 10:09:28.656  INFO 2505 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2021-01-13 10:09:28.711  INFO 2505 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 3.746 seconds (JVM running for 4.505)
-2021-01-13 10:09:28.976  INFO 2505 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-01-13 10:09:28.979  INFO 2505 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-01-13 16:21:09.975  INFO 5804 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest using Java 15 on jerrys-mbp.lan with PID 5804 (started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
-2021-01-13 16:21:09.976 DEBUG 5804 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-13 16:21:09.977  INFO 5804 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : The following profiles are active: default
-2021-01-13 16:21:10.707  INFO 5804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-01-13 16:21:10.756  INFO 5804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
-2021-01-13 16:21:11.980  INFO 5804 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-01-13 16:21:12.292 DEBUG 5804 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-8912316159776728478, name='New', dateCreated=2021-01-13}
-2021-01-13 16:21:12.387 DEBUG 5804 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
-2021-01-13 16:21:12.621  WARN 5804 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-01-13 16:21:12.959  INFO 5804 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-13 16:21:13.471  INFO 5804 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2021-01-13 16:21:13.521  INFO 5804 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 3.89 seconds (JVM running for 4.63)
-2021-01-13 16:21:13.900  INFO 5804 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-01-13 16:21:13.904  INFO 5804 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-01-13 16:36:16.167  INFO 5979 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest using Java 15 on jerrys-mbp.lan with PID 5979 (started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
-2021-01-13 16:36:16.168 DEBUG 5979 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.4.1, Spring v5.3.2
-2021-01-13 16:36:16.168  INFO 5979 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : The following profiles are active: default
-2021-01-13 16:36:16.797  INFO 5979 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-01-13 16:36:16.856  INFO 5979 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
-2021-01-13 16:36:18.275  INFO 5979 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-01-13 16:36:18.603 DEBUG 5979 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=5371614491752507417, name='New', dateCreated=2021-01-13}
-2021-01-13 16:36:18.697 DEBUG 5979 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
-2021-01-13 16:36:18.912  WARN 5979 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-01-13 16:36:19.236  INFO 5979 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-01-13 16:36:19.759  INFO 5979 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2021-01-13 16:36:19.828  INFO 5979 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 3.873 seconds (JVM running for 4.575)
-2021-01-13 16:36:20.204  INFO 5979 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-01-13 16:36:20.208  INFO 5979 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 15:49:59.509  INFO 17022 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest using Java 15 on jerrys-mbp.lan with PID 17022 (started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-15 15:49:59.518 DEBUG 17022 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-15 15:49:59.518  INFO 17022 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : The following profiles are active: default
+2021-01-15 15:50:00.394  INFO 17022 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-15 15:50:00.432  INFO 17022 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2021-01-15 15:50:01.911  INFO 17022 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 15:50:02.167 DEBUG 17022 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-3546330699399278892, name='New', dateCreated=2021-01-15}
+2021-01-15 15:50:02.234 DEBUG 17022 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-15 15:50:02.406  WARN 17022 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-15 15:50:02.638  INFO 17022 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-15 15:50:03.009  INFO 17022 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-15 15:50:03.047  INFO 17022 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 3.798 seconds (JVM running for 4.697)
+2021-01-15 15:50:03.380  INFO 17022 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-15 15:50:03.383  INFO 17022 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 15:57:04.790  INFO 17082 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest using Java 15 on jerrys-mbp.lan with PID 17082 (started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-15 15:57:04.791 DEBUG 17082 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-15 15:57:04.792  INFO 17082 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : The following profiles are active: default
+2021-01-15 15:57:05.419  INFO 17082 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-15 15:57:05.450  INFO 17082 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2021-01-15 15:57:06.659  INFO 17082 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 15:57:06.950 DEBUG 17082 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-351054968653620193, name='New', dateCreated=2021-01-15}
+2021-01-15 15:57:07.010 DEBUG 17082 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-15 15:57:07.153  WARN 17082 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-15 15:57:07.373  INFO 17082 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-15 15:57:07.702  INFO 17082 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-15 15:57:07.745  INFO 17082 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 3.199 seconds (JVM running for 3.932)
+2021-01-15 15:57:08.012  INFO 17082 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-15 15:57:08.014  INFO 17082 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 16:00:27.769  INFO 17104 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest using Java 15 on jerrys-mbp.lan with PID 17104 (started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-15 16:00:27.771 DEBUG 17104 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-15 16:00:27.772  INFO 17104 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : The following profiles are active: default
+2021-01-15 16:00:28.546  INFO 17104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-15 16:00:28.598  INFO 17104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2021-01-15 16:00:29.772  INFO 17104 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 16:00:30.049 DEBUG 17104 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-5049909003578134412, name='New', dateCreated=2021-01-15}
+2021-01-15 16:00:30.108 DEBUG 17104 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-15 16:00:30.254  WARN 17104 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-15 16:00:30.473  INFO 17104 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-15 16:00:30.808  INFO 17104 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-15 16:00:30.851  INFO 17104 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 3.371 seconds (JVM running for 4.174)
+2021-01-15 16:00:31.207  INFO 17104 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-15 16:00:31.212  INFO 17104 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 16:08:20.831  INFO 17183 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Starting ProjectRepositoryIntegrationTest using Java 15 on jerrys-mbp.lan with PID 17183 (started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-15 16:08:20.833 DEBUG 17183 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-15 16:08:20.833  INFO 17183 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : The following profiles are active: default
+2021-01-15 16:08:21.746  INFO 17183 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-15 16:08:21.794  INFO 17183 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2021-01-15 16:08:23.333  INFO 17183 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 16:08:23.655 DEBUG 17183 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=2642772855118912885, name='New', dateCreated=2021-01-15}
+2021-01-15 16:08:23.748 DEBUG 17183 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-15 16:08:23.991  WARN 17183 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-15 16:08:24.292  INFO 17183 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-15 16:08:24.784  INFO 17183 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-15 16:08:24.848  INFO 17183 --- [main] e.s.p.r.ProjectRepositoryIntegrationTest : Started ProjectRepositoryIntegrationTest in 4.254 seconds (JVM running for 5.028)
+2021-01-15 16:08:25.204  INFO 17183 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-15 16:08:25.207  INFO 17183 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 16:09:17.672  INFO 17271 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 17271 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-15 16:09:17.673 DEBUG 17271 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-15 16:09:17.673  INFO 17271 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
+2021-01-15 16:09:18.203  INFO 17271 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-15 16:09:18.232  INFO 17271 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+2021-01-15 16:09:18.543  INFO 17271 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-15 16:09:18.623  INFO 17271 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 921 ms
+2021-01-15 16:09:19.334  INFO 17271 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 16:09:19.513 DEBUG 17271 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-6151212465503764141, name='New', dateCreated=2021-01-15}
+2021-01-15 16:09:19.560 DEBUG 17271 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-15 16:09:19.587  WARN 17271 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-15 16:09:19.654  INFO 17271 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-15 16:09:19.865  INFO 17271 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/status'
+2021-01-15 16:09:19.905  INFO 17271 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-15 16:09:19.919  INFO 17271 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 2.488 seconds (JVM running for 3.083)
+2021-01-15 16:09:20.480  INFO 17271 --- [RMI TCP Connection(3)-192.168.86.180] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-15 16:09:20.482  INFO 17271 --- [RMI TCP Connection(3)-192.168.86.180] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-15 16:14:10.105  INFO 17271 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-15 16:14:10.106  INFO 17271 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 16:14:15.306  INFO 17311 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 17311 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-15 16:14:15.307 DEBUG 17311 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-15 16:14:15.308  INFO 17311 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
+2021-01-15 16:14:15.794  INFO 17311 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-15 16:14:15.818  INFO 17311 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+2021-01-15 16:14:16.060  INFO 17311 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-15 16:14:16.122  INFO 17311 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 789 ms
+2021-01-15 16:14:16.212  INFO 17311 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:springdemo-db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2021-01-15 16:14:16.796  INFO 17311 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 16:14:16.981 DEBUG 17311 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-6042229861267984370, name='New', dateCreated=2021-01-15}
+2021-01-15 16:14:17.029 DEBUG 17311 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-15 16:14:17.055  WARN 17311 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-15 16:14:17.115  INFO 17311 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-15 16:14:17.294  INFO 17311 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/status'
+2021-01-15 16:14:17.325  INFO 17311 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-15 16:14:17.337  INFO 17311 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 2.227 seconds (JVM running for 2.64)
+2021-01-15 16:14:17.491  INFO 17311 --- [RMI TCP Connection(3)-192.168.86.180] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-15 16:14:17.492  INFO 17311 --- [RMI TCP Connection(3)-192.168.86.180] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-15 16:23:42.858  INFO 17311 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-15 16:23:42.859  INFO 17311 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 16:23:42.865  INFO 17311 --- [SpringContextShutdownHook] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:springdemo-db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2021-01-15 16:24:11.988  INFO 17398 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 17398 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-15 16:24:11.989 DEBUG 17398 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-15 16:24:11.990  INFO 17398 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
+2021-01-15 16:24:12.626  INFO 17398 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-15 16:24:12.667  INFO 17398 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2021-01-15 16:24:12.918  INFO 17398 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-15 16:24:12.981  INFO 17398 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 967 ms
+2021-01-15 16:24:13.063  WARN 17398 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ebf/springdemo/config/PersistenceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [org.hs.driver]
+2021-01-15 16:24:13.076  INFO 17398 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-15 16:24:13.092 ERROR 17398 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ebf/springdemo/config/PersistenceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [org.hs.driver]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1159) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) ~[spring-boot-2.4.1.jar:2.4.1]
+	at com.ebf.springdemo.SpringDemoApplication.main(SpringDemoApplication.java:26) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ebf/springdemo/config/PersistenceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [org.hs.driver]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 29 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [org.hs.driver]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 43 common frames omitted
+Caused by: java.lang.IllegalStateException: Could not load JDBC driver class [org.hs.driver]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName(DriverManagerDataSource.java:131) ~[spring-jdbc-5.3.2.jar:5.3.2]
+	at com.ebf.springdemo.config.PersistenceConfig.dataSource(PersistenceConfig.java:20) ~[classes/:na]
+	at com.ebf.springdemo.config.PersistenceConfig$$EnhancerBySpringCGLIB$$fbc0037c.CGLIB$dataSource$0(<generated>) ~[classes/:na]
+	at com.ebf.springdemo.config.PersistenceConfig$$EnhancerBySpringCGLIB$$fbc0037c$$FastClassBySpringCGLIB$$5e2a1bd0.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.2.jar:5.3.2]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.2.jar:5.3.2]
+	at com.ebf.springdemo.config.PersistenceConfig$$EnhancerBySpringCGLIB$$fbc0037c.dataSource(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 44 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.hs.driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:468) ~[na:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName(DriverManagerDataSource.java:128) ~[spring-jdbc-5.3.2.jar:5.3.2]
+	... 55 common frames omitted
+
+2021-01-15 16:25:45.684  INFO 17411 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 17411 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-15 16:25:45.685 DEBUG 17411 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-15 16:25:45.685  INFO 17411 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
+2021-01-15 16:25:46.145  INFO 17411 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-15 16:25:46.172  INFO 17411 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+2021-01-15 16:25:46.393  INFO 17411 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-15 16:25:46.453  INFO 17411 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 743 ms
+2021-01-15 16:25:46.531  WARN 17411 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ebf/springdemo/config/PersistenceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [org.h2.driver]
+2021-01-15 16:25:46.543  INFO 17411 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-15 16:25:46.552 ERROR 17411 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ebf/springdemo/config/PersistenceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [org.h2.driver]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1159) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) ~[spring-boot-2.4.1.jar:2.4.1]
+	at com.ebf.springdemo.SpringDemoApplication.main(SpringDemoApplication.java:26) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ebf/springdemo/config/PersistenceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [org.h2.driver]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 29 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [org.h2.driver]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 43 common frames omitted
+Caused by: java.lang.IllegalStateException: Could not load JDBC driver class [org.h2.driver]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName(DriverManagerDataSource.java:131) ~[spring-jdbc-5.3.2.jar:5.3.2]
+	at com.ebf.springdemo.config.PersistenceConfig.dataSource(PersistenceConfig.java:20) ~[classes/:na]
+	at com.ebf.springdemo.config.PersistenceConfig$$EnhancerBySpringCGLIB$$1c4b328c.CGLIB$dataSource$0(<generated>) ~[classes/:na]
+	at com.ebf.springdemo.config.PersistenceConfig$$EnhancerBySpringCGLIB$$1c4b328c$$FastClassBySpringCGLIB$$c4003862.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.2.jar:5.3.2]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.2.jar:5.3.2]
+	at com.ebf.springdemo.config.PersistenceConfig$$EnhancerBySpringCGLIB$$1c4b328c.dataSource(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 44 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.h2.driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:468) ~[na:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName(DriverManagerDataSource.java:128) ~[spring-jdbc-5.3.2.jar:5.3.2]
+	... 55 common frames omitted
+
+2021-01-15 16:26:07.144  INFO 17417 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 17417 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-15 16:26:07.146 DEBUG 17417 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-15 16:26:07.147  INFO 17417 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
+2021-01-15 16:26:07.633  INFO 17417 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-15 16:26:07.655  INFO 17417 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2021-01-15 16:26:07.872  INFO 17417 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-15 16:26:07.933  INFO 17417 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 757 ms
+2021-01-15 16:26:08.544  INFO 17417 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 16:26:08.688 DEBUG 17417 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=3421710361812464493, name='New', dateCreated=2021-01-15}
+2021-01-15 16:26:08.725 DEBUG 17417 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-15 16:26:08.747  WARN 17417 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-15 16:26:08.804  INFO 17417 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-15 16:26:08.963  INFO 17417 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/status'
+2021-01-15 16:26:08.990  INFO 17417 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-15 16:26:09.000  INFO 17417 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 2.057 seconds (JVM running for 2.476)
+2021-01-15 16:26:09.247  INFO 17417 --- [RMI TCP Connection(2)-192.168.86.180] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-15 16:26:09.248  INFO 17417 --- [RMI TCP Connection(2)-192.168.86.180] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

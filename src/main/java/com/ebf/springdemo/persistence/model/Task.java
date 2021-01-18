@@ -21,13 +21,12 @@ public class Task {
     public Task () {
     }
 
-    public Task(Long id, String name, String description, LocalDate dateCreated, LocalDate dueDate, TaskStatus status) {
-        this.id = id;
+    public Task(String name, String description, LocalDate dateCreated, LocalDate dueDate) {
         this.name = name;
         this.description = description;
         this.dateCreated = dateCreated;
         this.dueDate = dueDate;
-        this.status = status;
+        this.status = TaskStatus.TO_DO;
     }
 
     public Task(Task task) {
@@ -98,5 +97,17 @@ public class Task {
     @Override
     public int hashCode() {
         return Objects.hash(id, name, description, dateCreated, dueDate, status);
+    }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", dateCreated=" + dateCreated +
+                ", dueDate=" + dueDate +
+                ", status=" + status +
+                '}';
     }
 }

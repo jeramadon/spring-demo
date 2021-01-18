@@ -92,6 +92,7 @@ public class Project {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", dateCreated=" + dateCreated +
+                ", tasks=" + tasks +
                 '}';
     }
 }

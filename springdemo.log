@@ -259,3 +259,283 @@ java.lang.NullPointerException: Cannot invoke "com.ebf.springdemo.service.ITaskS
 2021-01-18 14:17:03.398  INFO 3949 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 2.317 seconds (JVM running for 2.77)
 2021-01-18 14:17:03.777  INFO 3949 --- [RMI TCP Connection(3)-192.168.86.185] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-01-18 14:17:03.778  INFO 3949 --- [RMI TCP Connection(3)-192.168.86.185] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-18 15:16:47.852  INFO 3949 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-18 15:16:47.853  INFO 3949 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-18 15:16:51.282  INFO 4564 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 4564 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-18 15:16:51.283 DEBUG 4564 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-18 15:16:51.283  INFO 4564 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
+2021-01-18 15:16:51.788  INFO 4564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-18 15:16:51.817  INFO 4564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2021-01-18 15:16:52.029  INFO 4564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-18 15:16:52.085  INFO 4564 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 780 ms
+2021-01-18 15:16:52.675  INFO 4564 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-18 15:16:52.851 DEBUG 4564 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:16:52.852 DEBUG 4564 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:16:52.860 DEBUG 4564 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=3122946343059864910, name='Project 1', dateCreated=2021-01-18, tasks=null}
+2021-01-18 15:16:52.892 DEBUG 4564 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=3122946343059864910, name='Project 1', dateCreated=2021-01-18, tasks=[Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}]}
+2021-01-18 15:16:52.897 DEBUG 4564 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:16:52.911  INFO 4564 --- [main] c.ebf.springdemo.SpringDemoApplication   : All Projects:
+2021-01-18 15:16:52.912 DEBUG 4564 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:16:52.912 DEBUG 4564 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:16:52.965 DEBUG 4564 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:16:52.966  INFO 4564 --- [main] c.ebf.springdemo.SpringDemoApplication   : Project{id=3122946343059864910, name='Project 1', dateCreated=2021-01-18, tasks=[Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}]}
+2021-01-18 15:16:52.966  INFO 4564 --- [main] c.ebf.springdemo.SpringDemoApplication   : All Tasks:
+2021-01-18 15:16:52.967 DEBUG 4564 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:16:52.967 DEBUG 4564 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:16:52.969 DEBUG 4564 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:16:52.970  INFO 4564 --- [main] c.ebf.springdemo.SpringDemoApplication   : Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}
+2021-01-18 15:16:52.992  WARN 4564 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-18 15:16:53.049  INFO 4564 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-18 15:16:53.249  INFO 4564 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/status'
+2021-01-18 15:16:53.290  INFO 4564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-18 15:16:53.303  INFO 4564 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 2.21 seconds (JVM running for 2.601)
+2021-01-18 15:16:53.830  INFO 4564 --- [RMI TCP Connection(2)-192.168.86.185] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-18 15:16:53.831  INFO 4564 --- [RMI TCP Connection(2)-192.168.86.185] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-18 15:17:02.988 DEBUG 4564 --- [http-nio-8080-exec-2] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-18 15:17:02.989 DEBUG 4564 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:17:02.989 DEBUG 4564 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:17:02.991 DEBUG 4564 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:17:03.000 ERROR 4564 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:141) ~[na:na]
+	at com.ebf.springdemo.web.controller.ProjectController.find(ProjectController.java:24) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.2.jar:5.3.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.4.1.jar:2.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-01-18 15:19:04.211 DEBUG 4564 --- [http-nio-8080-exec-4] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 3122946343059864910
+2021-01-18 15:19:04.212 DEBUG 4564 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:19:04.212 DEBUG 4564 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:19:04.214 DEBUG 4564 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:23:03.217  INFO 4564 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-18 15:23:03.219  INFO 4564 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-18 15:23:07.910  INFO 4599 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 4599 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-18 15:23:07.911 DEBUG 4599 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-18 15:23:07.912  INFO 4599 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
+2021-01-18 15:23:08.429  INFO 4599 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-18 15:23:08.455  INFO 4599 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2021-01-18 15:23:08.668  INFO 4599 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-18 15:23:08.729  INFO 4599 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 795 ms
+2021-01-18 15:23:09.395  INFO 4599 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-18 15:23:09.559 DEBUG 4599 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:23:09.560 DEBUG 4599 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:23:09.569 DEBUG 4599 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-4720908150850991510, name='Project 1', dateCreated=2021-01-18, tasks=null}
+2021-01-18 15:23:09.598 DEBUG 4599 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-4720908150850991510, name='Project 1', dateCreated=2021-01-18, tasks=[Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}]}
+2021-01-18 15:23:09.603 DEBUG 4599 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:23:09.619  INFO 4599 --- [main] c.ebf.springdemo.SpringDemoApplication   : All Projects:
+2021-01-18 15:23:09.620 DEBUG 4599 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:23:09.621 DEBUG 4599 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:23:09.686 DEBUG 4599 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:23:09.687  INFO 4599 --- [main] c.ebf.springdemo.SpringDemoApplication   : Project{id=-4720908150850991510, name='Project 1', dateCreated=2021-01-18, tasks=[Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}]}
+2021-01-18 15:23:09.688  INFO 4599 --- [main] c.ebf.springdemo.SpringDemoApplication   : All Tasks:
+2021-01-18 15:23:09.689 DEBUG 4599 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:23:09.689 DEBUG 4599 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:23:09.693 DEBUG 4599 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:23:09.694  INFO 4599 --- [main] c.ebf.springdemo.SpringDemoApplication   : Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}
+2021-01-18 15:23:09.723  WARN 4599 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-18 15:23:09.809  INFO 4599 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-18 15:23:10.018  INFO 4599 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/status'
+2021-01-18 15:23:10.062  INFO 4599 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-18 15:23:10.076  INFO 4599 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 2.357 seconds (JVM running for 2.758)
+2021-01-18 15:23:10.457  INFO 4599 --- [RMI TCP Connection(2)-192.168.86.185] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-18 15:23:10.458  INFO 4599 --- [RMI TCP Connection(2)-192.168.86.185] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-18 15:23:18.577 DEBUG 4599 --- [http-nio-8080-exec-1] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 3122946343059864910
+2021-01-18 15:23:18.578 DEBUG 4599 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:23:18.579 DEBUG 4599 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:23:18.580 DEBUG 4599 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:23:22.471 DEBUG 4599 --- [http-nio-8080-exec-3] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 3122946343059864910
+2021-01-18 15:23:22.472 DEBUG 4599 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:23:22.472 DEBUG 4599 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:23:22.473 DEBUG 4599 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:24:56.189 DEBUG 4599 --- [http-nio-8080-exec-6] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 3122946343059864910
+2021-01-18 15:24:56.190 DEBUG 4599 --- [http-nio-8080-exec-6] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:24:56.190 DEBUG 4599 --- [http-nio-8080-exec-6] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:24:56.191 DEBUG 4599 --- [http-nio-8080-exec-6] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:24:59.866  INFO 4599 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-18 15:24:59.867  INFO 4599 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-18 15:25:07.187  INFO 4620 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 4620 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-18 15:25:07.188 DEBUG 4620 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-18 15:25:07.189  INFO 4620 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
+2021-01-18 15:25:07.712  INFO 4620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-18 15:25:07.738  INFO 4620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2021-01-18 15:25:07.951  INFO 4620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-18 15:25:08.013  INFO 4620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 802 ms
+2021-01-18 15:25:08.691  INFO 4620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-18 15:25:08.879 DEBUG 4620 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:25:08.879 DEBUG 4620 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:25:08.887 DEBUG 4620 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-4706991206811024222, name='Project 1', dateCreated=2021-01-18, tasks=null}
+2021-01-18 15:25:08.917 DEBUG 4620 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-4706991206811024222, name='Project 1', dateCreated=2021-01-18, tasks=[Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}]}
+2021-01-18 15:25:08.922 DEBUG 4620 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:25:08.935  INFO 4620 --- [main] c.ebf.springdemo.SpringDemoApplication   : All Projects:
+2021-01-18 15:25:08.936 DEBUG 4620 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:25:08.936 DEBUG 4620 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:25:08.984 DEBUG 4620 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:25:08.984  INFO 4620 --- [main] c.ebf.springdemo.SpringDemoApplication   : Project{id=-4706991206811024222, name='Project 1', dateCreated=2021-01-18, tasks=[Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}]}
+2021-01-18 15:25:08.984  INFO 4620 --- [main] c.ebf.springdemo.SpringDemoApplication   : All Tasks:
+2021-01-18 15:25:08.985 DEBUG 4620 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:25:08.985 DEBUG 4620 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:25:08.987 DEBUG 4620 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:25:08.987  INFO 4620 --- [main] c.ebf.springdemo.SpringDemoApplication   : Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}
+2021-01-18 15:25:09.007  WARN 4620 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-18 15:25:09.058  INFO 4620 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-18 15:25:09.253  INFO 4620 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/status'
+2021-01-18 15:25:09.287  INFO 4620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-18 15:25:09.299  INFO 4620 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 2.3 seconds (JVM running for 2.707)
+2021-01-18 15:25:09.721  INFO 4620 --- [RMI TCP Connection(2)-192.168.86.185] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-18 15:25:09.722  INFO 4620 --- [RMI TCP Connection(2)-192.168.86.185] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-18 15:25:28.785 DEBUG 4620 --- [http-nio-8080-exec-1] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: -4706991206811024222
+2021-01-18 15:25:28.786 DEBUG 4620 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:25:28.786 DEBUG 4620 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:25:28.789 DEBUG 4620 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:25:37.821 DEBUG 4620 --- [http-nio-8080-exec-3] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: -470699120681102422
+2021-01-18 15:25:37.821 DEBUG 4620 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:25:37.822 DEBUG 4620 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:25:37.823 DEBUG 4620 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:25:44.113 DEBUG 4620 --- [http-nio-8080-exec-4] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: -4706991206811024220
+2021-01-18 15:25:44.114 DEBUG 4620 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:25:44.115 DEBUG 4620 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:25:44.116 DEBUG 4620 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:25:51.160 DEBUG 4620 --- [http-nio-8080-exec-5] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: -4706991206811024222
+2021-01-18 15:25:51.161 DEBUG 4620 --- [http-nio-8080-exec-5] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:25:51.161 DEBUG 4620 --- [http-nio-8080-exec-5] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:25:51.163 DEBUG 4620 --- [http-nio-8080-exec-5] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:32:19.406  INFO 4620 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-18 15:32:19.407  INFO 4620 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-18 15:32:50.798  INFO 4860 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 4860 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-18 15:32:50.800 DEBUG 4860 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-18 15:32:50.800  INFO 4860 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
+2021-01-18 15:32:51.300  INFO 4860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-18 15:32:51.323  INFO 4860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2021-01-18 15:32:51.545  INFO 4860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-18 15:32:51.601  INFO 4860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 778 ms
+2021-01-18 15:32:52.185  INFO 4860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-18 15:32:52.324 DEBUG 4860 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:32:52.325 DEBUG 4860 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:32:52.331 DEBUG 4860 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=824907027450054856, name='Project 1', dateCreated=2021-01-18, tasks=null}
+2021-01-18 15:32:52.358 DEBUG 4860 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=1, name='Project 1', dateCreated=2021-01-18, tasks=[Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}]}
+2021-01-18 15:32:52.363 DEBUG 4860 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:32:52.373  INFO 4860 --- [main] c.ebf.springdemo.SpringDemoApplication   : All Projects:
+2021-01-18 15:32:52.374 DEBUG 4860 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:32:52.374 DEBUG 4860 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:32:52.425 DEBUG 4860 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:32:52.426  INFO 4860 --- [main] c.ebf.springdemo.SpringDemoApplication   : Project{id=1, name='Project 1', dateCreated=2021-01-18, tasks=[Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}]}
+2021-01-18 15:32:52.426  INFO 4860 --- [main] c.ebf.springdemo.SpringDemoApplication   : All Tasks:
+2021-01-18 15:32:52.427 DEBUG 4860 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:32:52.427 DEBUG 4860 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:32:52.430 DEBUG 4860 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:32:52.430  INFO 4860 --- [main] c.ebf.springdemo.SpringDemoApplication   : Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}
+2021-01-18 15:32:52.458  WARN 4860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-18 15:32:52.533  INFO 4860 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-18 15:32:52.747  INFO 4860 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/status'
+2021-01-18 15:32:52.785  INFO 4860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-18 15:32:52.801  INFO 4860 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 2.192 seconds (JVM running for 2.598)
+2021-01-18 15:32:52.913  INFO 4860 --- [RMI TCP Connection(1)-192.168.86.185] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-18 15:32:52.915  INFO 4860 --- [RMI TCP Connection(1)-192.168.86.185] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-18 15:35:12.082  WARN 4860 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2021-01-18 15:36:31.314  WARN 4860 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2021-01-18 15:36:56.882  WARN 4860 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('n' (code 110)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('n' (code 110)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 2, column: 6]]
+2021-01-18 15:37:29.254  WARN 4860 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDate` from String "2021-18-01": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '2021-18-01' could not be parsed: Invalid value for MonthOfYear (valid values 1 - 12): 18; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDate` from String "2021-18-01": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '2021-18-01' could not be parsed: Invalid value for MonthOfYear (valid values 1 - 12): 18
+ at [Source: (PushbackInputStream); line: 3, column: 20] (through reference chain: com.ebf.springdemo.persistence.model.Project["dateCreated"])]
+2021-01-18 15:37:33.541  WARN 4860 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDate` from String "2021-18-01": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '2021-18-01' could not be parsed: Invalid value for MonthOfYear (valid values 1 - 12): 18; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDate` from String "2021-18-01": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '2021-18-01' could not be parsed: Invalid value for MonthOfYear (valid values 1 - 12): 18
+ at [Source: (PushbackInputStream); line: 3, column: 20] (through reference chain: com.ebf.springdemo.persistence.model.Project["dateCreated"])]
+2021-01-18 15:38:00.189  WARN 4860 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 5, column: 2]]
+2021-01-18 15:38:10.065 DEBUG 4860 --- [http-nio-8080-exec-4] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=0, name='Postman project', dateCreated=2021-01-18, tasks=[]}
+2021-01-18 15:38:10.066 DEBUG 4860 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:38:10.066 DEBUG 4860 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:38:10.069 DEBUG 4860 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:42:43.766  INFO 4860 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-18 15:42:43.767  INFO 4860 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-18 15:42:56.270  INFO 4929 --- [main] c.ebf.springdemo.SpringDemoApplication   : Starting SpringDemoApplication using Java 15 on jerrys-mbp.lan with PID 4929 (/Users/jerryamadon/work/intellij/spring-demo/target/classes started by jerryamadon in /Users/jerryamadon/work/intellij/spring-demo)
+2021-01-18 15:42:56.280 DEBUG 4929 --- [main] c.ebf.springdemo.SpringDemoApplication   : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-18 15:42:56.281  INFO 4929 --- [main] c.ebf.springdemo.SpringDemoApplication   : The following profiles are active: default
+2021-01-18 15:42:56.805  INFO 4929 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-18 15:42:56.917  INFO 4929 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 2 JPA repository interfaces.
+2021-01-18 15:42:57.167  INFO 4929 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-18 15:42:57.221  INFO 4929 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 911 ms
+2021-01-18 15:42:57.820  INFO 4929 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-18 15:42:57.963 DEBUG 4929 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:42:57.963 DEBUG 4929 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:42:57.971 DEBUG 4929 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=-35520636887591396, name='Project 1', dateCreated=2021-01-18, tasks=null}
+2021-01-18 15:42:58.003 DEBUG 4929 --- [main] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=1, name='Project 1', dateCreated=2021-01-18, tasks=[Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}]}
+2021-01-18 15:42:58.007 DEBUG 4929 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:42:58.017  INFO 4929 --- [main] c.ebf.springdemo.SpringDemoApplication   : All Projects:
+2021-01-18 15:42:58.018 DEBUG 4929 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:42:58.018 DEBUG 4929 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:42:58.079 DEBUG 4929 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:42:58.080  INFO 4929 --- [main] c.ebf.springdemo.SpringDemoApplication   : Project{id=1, name='Project 1', dateCreated=2021-01-18, tasks=[Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}]}
+2021-01-18 15:42:58.081  INFO 4929 --- [main] c.ebf.springdemo.SpringDemoApplication   : All Tasks:
+2021-01-18 15:42:58.082 DEBUG 4929 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:42:58.082 DEBUG 4929 --- [main] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:42:58.085 DEBUG 4929 --- [main] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:42:58.085  INFO 4929 --- [main] c.ebf.springdemo.SpringDemoApplication   : Task{id=1, name='Task1', description='Project 1/Task 1', dateCreated=2021-01-18, dueDate=2021-01-25, status=TO_DO}
+2021-01-18 15:42:58.117  WARN 4929 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-18 15:42:58.189  INFO 4929 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-18 15:42:58.383  INFO 4929 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/status'
+2021-01-18 15:42:58.423  INFO 4929 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-18 15:42:58.435  INFO 4929 --- [main] c.ebf.springdemo.SpringDemoApplication   : Started SpringDemoApplication in 2.377 seconds (JVM running for 2.81)
+2021-01-18 15:42:58.856  INFO 4929 --- [RMI TCP Connection(2)-192.168.86.185] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-18 15:42:58.857  INFO 4929 --- [RMI TCP Connection(2)-192.168.86.185] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-18 15:43:18.385 DEBUG 4929 --- [http-nio-8080-exec-1] c.e.s.service.impl.ProjectServiceImpl    : ProjectService findById: 1
+2021-01-18 15:43:18.386 DEBUG 4929 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:43:18.386 DEBUG 4929 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:43:18.389 DEBUG 4929 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:43:27.944 DEBUG 4929 --- [http-nio-8080-exec-3] c.e.s.service.impl.ProjectServiceImpl    : ProjectService save: Project{id=0, name='Postman project', dateCreated=2021-01-18, tasks=[]}
+2021-01-18 15:43:27.944 DEBUG 4929 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-01-18 15:43:27.944 DEBUG 4929 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : begin
+2021-01-18 15:43:27.949 DEBUG 4929 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : committing
+2021-01-18 15:58:19.174  INFO 4929 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-18 15:58:19.175  INFO 4929 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

@@ -5,34 +5,33 @@ import com.ebf.springdemo.persistence.model.Task;
 import com.ebf.springdemo.service.IProjectService;
 import com.ebf.springdemo.web.dto.ProjectDto;
 import com.ebf.springdemo.web.dto.TaskDto;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.stream.Collectors;
 
-@Controller
-@RequestMapping(value = "/projects")
-public class ProjectController {
+//@RestController
+//@RequestMapping(value = "/projects")
+public class ProjectRestController {
 
     private IProjectService projectService;
 
-    public ProjectController(IProjectService projectService) {
+    public ProjectRestController(IProjectService projectService) {
         super();
         this.projectService = projectService;
     }
 
-    @GetMapping
-    public String getProjects(Model model) {
-        Iterable<Project> projects = projectService.findAll();
-        List<ProjectDto> projectDtos = new ArrayList<>();
-        projects.forEach(project -> projectDtos.add(convertToProjectDto(project)));
-        model.addAttribute("projects", projectDtos);
-        return "projects";
+    @GetMapping(value = "/{id}")
+    public ProjectDto find(@PathVariable Long id) {
+        Project project = projectService.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+        return convertToProjectDto(project);
+    }
+
+    @PostMapping(value ="/create")
+    public Project create(@RequestBody ProjectDto projectDto) {
+        return projectService.save(convertToProjectEntity(projectDto));
     }
 
     public Project convertToProjectEntity(ProjectDto projectDto) {

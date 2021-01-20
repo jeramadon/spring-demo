@@ -1,7 +1,7 @@
 package com.ebf.springdemo.persistence.repository;
 
 import com.ebf.springdemo.persistence.model.Project;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface IProjectRepository extends CrudRepository<Project, Long> {
+public interface IProjectRepository extends PagingAndSortingRepository<Project, Long> {
 }

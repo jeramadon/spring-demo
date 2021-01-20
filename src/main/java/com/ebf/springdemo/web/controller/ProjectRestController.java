@@ -23,13 +23,13 @@ public class ProjectRestController {
         this.projectService = projectService;
     }
 
-    @GetMapping(value = "/{id}")
+    //@GetMapping(value = "/{id}")
     public ProjectDto find(@PathVariable Long id) {
         Project project = projectService.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
         return convertToProjectDto(project);
     }
 
-    @PostMapping(value ="/create")
+    //@PostMapping(value ="/create")
     public Project create(@RequestBody ProjectDto projectDto) {
         return projectService.save(convertToProjectEntity(projectDto));
     }

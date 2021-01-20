@@ -4,21 +4,24 @@
 </head>
 
 <body>
-<table>
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr th:each="project : ${projects}">
-            <td th:text="${project.id}"></td>
-            <td th:text="${project.name}"></td>
-        </tr>
-    </tbody>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="project : ${projects}">
+                <td th:text="${project.id}"></td>
+                <td th:text="${project.name}"></td>
+            </tr>
+        </tbody>
 
-</table>
+    </table>
+    <p>
+        <a th:href="@{/projects/new}">New Project</a>
+    </p>
 </body>
 
 </html>

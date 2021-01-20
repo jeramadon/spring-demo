@@ -8,6 +8,7 @@ import com.ebf.springdemo.web.dto.TaskDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.time.LocalDate;
@@ -33,6 +34,18 @@ public class ProjectController {
         projects.forEach(project -> projectDtos.add(convertToProjectDto(project)));
         model.addAttribute("projects", projectDtos);
         return "projects";
+    }
+
+    @GetMapping("/new")
+    public String newProject(Model model) {
+        model.addAttribute("project", new ProjectDto());
+        return "new-project";
+    }
+
+    @PostMapping
+    public String addProject(ProjectDto projectDto) {
+        projectService.save(convertToProjectEntity(projectDto));
+        return ("redirect:/projects");
     }
 
     public Project convertToProjectEntity(ProjectDto projectDto) {

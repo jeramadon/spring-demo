@@ -1,27 +1,25 @@
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html>
 <head>
-    <title>Projects</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Learn Spring | FreeMarker Template Engine</title>
 </head>
-
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="project : ${projects}">
-                <td th:text="${project.id}"></td>
-                <td th:text="${project.name}"></td>
-            </tr>
-        </tbody>
-
-    </table>
-    <p>
-        <a th:href="@{/projects/new}">New Project</a>
-    </p>
+<div class="container">
+    <div class="col-sm-5">
+        <#list projects as project>
+        <h1>${project.name}</h1>
+        Tasks:
+        <ol>
+            <#list project.tasks as task>
+            <li>
+                ${task.name}: ${task.description}
+            </li>
+        </#list>
+        </ol>
+    </#list>
+</div>
+</div>
 </body>
-
 </html>

@@ -5,9 +5,10 @@
 
 <body>
     <form method="POST" th:action="@{/projects}" th:object="${project}">
-        <label for="name">Name"</label>
+        <label for="name">Name</label>
         <input type="text" id="name" th:field="*{name}" />
         <input type="submit" value="Save Project" />
+        <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}" />
     </form>
 </body>
 

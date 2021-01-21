@@ -1,5 +1,6 @@
 package com.ebf.springdemo.web.dto;
 
+import javax.validation.constraints.NotBlank;
 import java.util.Objects;
 import java.util.Random;
 import java.util.Set;
@@ -7,6 +8,7 @@ import java.util.Set;
 public class ProjectDto {
 
     private long id;
+    @NotBlank
     private String name;
     private String internalId;
     private Set<TaskDto> tasks;

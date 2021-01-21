@@ -2,24 +2,22 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <title>Learn Spring | FreeMarker Template Engine</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Learn Spring | Mustache Template Engine</title>
 </head>
 <body>
 <div class="container">
     <div class="col-sm-5">
-        <#list projects as project>
-        <h1>${project.name}</h1>
+        {{#projects}}
+        <h1>{{name}}</h1>
         Tasks:
         <ol>
-            <#list project.tasks as task>
-            <li>
-                ${task.name}: ${task.description}
-            </li>
-        </#list>
+            {{#tasks}}
+            <li>{{name}}: {{description}}</li> {{/tasks}}
         </ol>
-    </#list>
-</div>
+        {{/projects}}
+    </div>
 </div>
 </body>
 </html>

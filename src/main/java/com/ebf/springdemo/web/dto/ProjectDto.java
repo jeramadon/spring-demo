@@ -1,6 +1,7 @@
 package com.ebf.springdemo.web.dto;
 
 import javax.validation.constraints.NotBlank;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Random;
 import java.util.Set;
@@ -19,11 +20,13 @@ public class ProjectDto {
     public ProjectDto(String name) {
         this.id = new Random().nextLong();
         this.name = name;
+        this.tasks = new HashSet<>();
     }
 
     public ProjectDto(Long id, String name) {
         this.id = id;
         this.name = name;
+        this.tasks = new HashSet<>();
     }
 
     public long getId() {

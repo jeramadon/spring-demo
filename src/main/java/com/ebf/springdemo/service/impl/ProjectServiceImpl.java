@@ -62,4 +62,9 @@ public class ProjectServiceImpl implements IProjectService {
         newProject.setTasks(tasks);
         save(newProject);
     }
+
+    @Override
+    public Iterable<Project> findByName(String name) {
+        return projectRepository.findByNameContaining(name);
+    }
 }

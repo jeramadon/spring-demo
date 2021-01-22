@@ -30,7 +30,7 @@ public class ProjectController {
         this.projectService = projectService;
     }
 
-    @GetMapping
+    //@GetMapping
     public String getProjects(Model model) {
         Iterable<Project> projects = projectService.findAll();
         List<ProjectDto> projectDtos = new ArrayList<>();

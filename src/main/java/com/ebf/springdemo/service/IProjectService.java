@@ -14,4 +14,6 @@ public interface IProjectService {
     Iterable<Project> findAll();
 
     void createProjectWithTask() throws TaskNotSavedException;
+
+    Iterable<Project> findByName(String name);
 }

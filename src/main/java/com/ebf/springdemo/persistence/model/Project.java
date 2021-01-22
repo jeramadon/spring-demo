@@ -2,6 +2,7 @@ package com.ebf.springdemo.persistence.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Random;
 import java.util.Set;
@@ -27,6 +28,7 @@ public class Project {
         this.id = new Random().nextLong();
         this.name = name;
         this.dateCreated = dateCreated;
+        this.tasks = new HashSet<>();
     }
 
     public Project(Project project) {

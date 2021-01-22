@@ -10,10 +10,12 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.stream.Collectors;
 
-//@RestController
-//@RequestMapping(value = "/projects")
+@RestController
+@RequestMapping(value = "/projects")
 public class ProjectRestController {
 
     private IProjectService projectService;
@@ -29,9 +31,19 @@ public class ProjectRestController {
         return convertToProjectDto(project);
     }
 
-    //@PostMapping(value ="/create")
-    public Project create(@RequestBody ProjectDto projectDto) {
-        return projectService.save(convertToProjectEntity(projectDto));
+    @GetMapping
+    public Collection<ProjectDto> findProjects(@RequestParam(name = "name", defaultValue = "") String name) {
+        Iterable<Project> projects = projectService.findByName(name);
+        ArrayList<ProjectDto> projectDtos = new ArrayList<>();
+        projects.forEach(project -> projectDtos.add(convertToProjectDto(project)));
+        return projectDtos;
+    }
+
+    @PostMapping(value = "/create")
+    @ResponseStatus(HttpStatus.CREATED)
+    public ProjectDto createProject(@RequestBody ProjectDto projectDto) {
+        Project project = convertToProjectEntity(projectDto);
+        return convertToProjectDto(projectService.save(project));
     }
 
     public Project convertToProjectEntity(ProjectDto projectDto) {

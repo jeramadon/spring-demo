@@ -7,11 +7,11 @@ import com.ebf.springdemo.web.dto.ProjectDto;
 import com.ebf.springdemo.web.dto.TaskDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
@@ -25,10 +25,10 @@ public class ProjectRestController {
         this.projectService = projectService;
     }
 
-    //@GetMapping(value = "/{id}")
+    @GetMapping(value = "/{id}")
     public ProjectDto find(@PathVariable Long id) {
-        Project project = projectService.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-        return convertToProjectDto(project);
+        Optional<Project> project = projectService.findById(id);
+        return convertToProjectDto(project.get());
     }
 
     @GetMapping
@@ -44,6 +44,12 @@ public class ProjectRestController {
     public ProjectDto createProject(@RequestBody ProjectDto projectDto) {
         Project project = convertToProjectEntity(projectDto);
         return convertToProjectDto(projectService.save(project));
+    }
+
+    @DeleteMapping(value = "/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void delete(@PathVariable Long id) {
+        projectService.delete(id);
     }
 
     public Project convertToProjectEntity(ProjectDto projectDto) {

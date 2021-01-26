@@ -67,4 +67,9 @@ public class ProjectServiceImpl implements IProjectService {
     public Iterable<Project> findByName(String name) {
         return projectRepository.findByNameContaining(name);
     }
+
+    @Override
+    public void delete(Long id) {
+        projectRepository.deleteById(id);
+    }
 }

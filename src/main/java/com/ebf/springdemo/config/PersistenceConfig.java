@@ -9,11 +9,6 @@ import javax.sql.DataSource;
 @Configuration
 public class PersistenceConfig {
 
-//    @Bean
-//    public DataSource dataSource() {
-//        return new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2).setName("springdemo-db").build();
-//    }
-
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();

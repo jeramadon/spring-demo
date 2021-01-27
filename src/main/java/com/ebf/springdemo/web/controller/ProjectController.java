@@ -1,56 +1,60 @@
 package com.ebf.springdemo.web.controller;
 
+import com.ebf.springdemo.events.ProjectCreatedEvent;
 import com.ebf.springdemo.persistence.model.Project;
 import com.ebf.springdemo.persistence.model.Task;
 import com.ebf.springdemo.service.IProjectService;
 import com.ebf.springdemo.web.dto.ProjectDto;
 import com.ebf.springdemo.web.dto.TaskDto;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Optional;
+import java.util.List;
 import java.util.stream.Collectors;
 
-//@RestController
-//@RequestMapping(value = "/projects")
-public class ProjectRestController {
+@Controller
+@RequestMapping(value = "/projects")
+public class ProjectController {
 
     private IProjectService projectService;
 
-    public ProjectRestController(IProjectService projectService) {
+    @Autowired
+    private ApplicationEventPublisher eventPublisher;
+
+    public ProjectController(IProjectService projectService) {
         super();
         this.projectService = projectService;
     }
 
-    //@GetMapping(value = "/{id}")
-    public ProjectDto find(@PathVariable Long id) {
-        Optional<Project> project = projectService.findById(id);
-        return convertToProjectDto(project.get());
-    }
-
-    //@GetMapping
-    public Collection<ProjectDto> findProjects(@RequestParam(name = "name", defaultValue = "") String name) {
-        Iterable<Project> projects = projectService.findByName(name);
-        ArrayList<ProjectDto> projectDtos = new ArrayList<>();
+    @GetMapping
+    public String getProjects(Model model) {
+        Iterable<Project> projects = projectService.findAll();
+        List<ProjectDto> projectDtos = new ArrayList<>();
         projects.forEach(project -> projectDtos.add(convertToProjectDto(project)));
-        return projectDtos;
+        model.addAttribute("projects", projectDtos);
+        return "projects";
     }
 
-    //@PostMapping(value = "/create")
-    //@ResponseStatus(HttpStatus.CREATED)
-    public ProjectDto createProject(@RequestBody ProjectDto projectDto) {
+    @GetMapping("/new")
+    public String newProject(Model model) {
+        ProjectDto projectDto = new ProjectDto();
+        model.addAttribute("project", projectDto);
+        eventPublisher.publishEvent(new ProjectCreatedEvent(projectDto.getId()));
+        return "new-project";
+    }
+
+    @PostMapping
+    public String addProject(ProjectDto projectDto) {
         Project project = convertToProjectEntity(projectDto);
-        return convertToProjectDto(projectService.save(project));
-    }
-
-    //@DeleteMapping(value = "/{id}")
-    //@ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable Long id) {
-        projectService.delete(id);
+        projectService.save(project);
+        return ("redirect:/projects");
     }
 
     public Project convertToProjectEntity(ProjectDto projectDto) {

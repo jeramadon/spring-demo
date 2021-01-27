@@ -13,7 +13,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.annotation.PostConstruct;
 
-//@SpringBootApplication(scanBasePackageClasses = "com.ebf.springdemo.persistence")
 @SpringBootApplication
 public class SpringDemoApplication {
 
